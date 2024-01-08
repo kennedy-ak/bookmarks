@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'accounts',
     'social_django',
     'django_extensions',
-    'images',
+    # 'images',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -145,12 +145,13 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'accounts.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
-    'social.core.backends.google.GoogleOAuth2',
+    # 'social.core.backends.google.GoogleOAuth2',
+    # 'social_core.backends.google.GoogleOAuth2',
 
 ]
 
 SOCIAL_AUTH_FACEBOOK_KEY = '886133672983877' # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = 'aa07e7794f4834b5f905d01e19bdd387' # Facebook App Secret
+SOCIAL_AUTH_FACEBOOK_SECRET = 'aa07e7794f4834b5f905d0' # Facebook App Secret
 
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
