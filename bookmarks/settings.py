@@ -146,7 +146,7 @@ AUTHENTICATION_BACKENDS = [
     'accounts.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
-    # 'social.core.backends.google.GoogleOAuth2',
+   
     'social_core.backends.google.GoogleOAuth2',
 
 ]
