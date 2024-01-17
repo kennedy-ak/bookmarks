@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'accounts',
     'social_django',
     'django_extensions',
-    # 'images',
+    'images',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
