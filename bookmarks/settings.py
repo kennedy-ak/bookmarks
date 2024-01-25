@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'accounts',
     'social_django',
     'django_extensions',
+     'easy_thumbnails',
     'images',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -156,3 +157,9 @@ SOCIAL_AUTH_FACEBOOK_SECRET = 'aa07e7794f4834b5f905d0' # Facebook App Secret
 
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+from django.urls import reverse_lazy
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail',
+                                        args=[u.username])
+}
